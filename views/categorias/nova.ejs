@@ -1,0 +1,11 @@
+<%- include('../header') %>
+
+<form method="POST" action="/categorias/nova">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Categoria</label><br>
+          <input class="form-control" placeholder="Insira o nome da categoria"type="text" name="categoria"/>
+          <small id="emailHelp" class="form-text text-muted">Insira o nome da categoria e clique no botao para submeter.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<%- include('../footer') %>

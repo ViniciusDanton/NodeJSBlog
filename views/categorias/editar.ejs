@@ -1,0 +1,12 @@
+<%- include('../header') %>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<form method="POST" action="/categorias/editar/<%=categoria.id%>">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Categoria</label><br>
+      <input class="form-control" placeholder="Insira o nome da categoria"type="text" name="categoria" value="<%=categoria.categoria%>"/>
+      <small id="emailHelp" class="form-text text-muted">Insira o nome da categoria e clique no botao para submeter.</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<%- include('../footer') %>
